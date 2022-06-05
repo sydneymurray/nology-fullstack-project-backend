@@ -39,6 +39,6 @@ public class CarController {
         System.out.println("pokemon = " + carId);
         int deleted = this.carRepository.deleteCarByCarId(carId);
         if (deleted > 0) return "Car was deleted okay";
-        return "Car Id doesn't exist";
+        return "Car Id: " + carId +" does not exist";
     }
 }

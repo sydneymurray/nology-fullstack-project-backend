@@ -37,11 +37,11 @@ public class Car {
         this.videoURL = videoURL;
     }
 
-    public void setCardId(int cardId) {
+    public void setCarId(int cardId) {
         this.carId = cardId;
     }
 
-    public int getCardId() {
+    public int getCarId() {
         return carId;
     }
 
