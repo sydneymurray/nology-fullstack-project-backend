@@ -21,11 +21,20 @@ public class Car {
     private String engineCapacity;
     private String modifications;
     private String wikiURL;
+    private String videoURL;
     private String mainImageURL;
     private ArrayList<String> imagesURL;
 
 
     public Car() {
+    }
+
+    public String getVideoURL() {
+        return videoURL;
+    }
+
+    public void setVideoURL(String videoURL) {
+        this.videoURL = videoURL;
     }
 
     public void setCardId(int cardId) {
