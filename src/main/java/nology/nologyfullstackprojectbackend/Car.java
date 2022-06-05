@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class Car {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int cardId;
+    private int carId;
     private String manufacturer;
     private String model;
     private String year;
@@ -38,11 +38,11 @@ public class Car {
     }
 
     public void setCardId(int cardId) {
-        this.cardId = cardId;
+        this.carId = cardId;
     }
 
     public int getCardId() {
-        return cardId;
+        return carId;
     }
 
     public String getManufacturer() {
