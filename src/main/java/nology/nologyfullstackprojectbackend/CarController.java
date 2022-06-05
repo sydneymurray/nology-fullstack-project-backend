@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class CarController {
     @GetMapping("/cars")
     public String getCars(){
-        return "Hello Sydney";
+        return "Hello Everyone";
     }
 }
