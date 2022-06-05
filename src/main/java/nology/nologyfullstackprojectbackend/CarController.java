@@ -10,14 +10,14 @@ import java.util.List;
 public class CarController {
     @Autowired
     CarRepository carRepository;
+
     @GetMapping("/car")
     public String getCar(){
         return "Hello Everyone, still working";
     }
-/*
+
     @GetMapping("/cars")
     public List<Car> getCars(){
         return carRepository.findAll();
     }
-*/
 }
