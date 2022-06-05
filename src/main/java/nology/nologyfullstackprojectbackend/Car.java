@@ -28,6 +28,10 @@ public class Car {
     public Car() {
     }
 
+    public void setCardId(int cardId) {
+        this.cardId = cardId;
+    }
+
     public int getCardId() {
         return cardId;
     }
