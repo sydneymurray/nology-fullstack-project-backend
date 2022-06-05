@@ -6,6 +6,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.*;
+
 import java.util.List;
 
 @RestController
@@ -19,7 +22,7 @@ public class CarController {
     }
 
     @PostMapping("/car")
-    public String addCar (@RequestBody Car text) {
+    public String addCar(@RequestBody Car text){
         this.carRepository.save(text);
         System.out.println("Added " + text);
         return "Car saved okay";
@@ -30,5 +33,12 @@ public class CarController {
         return carRepository.findAll();
     }
 
-
+    @DeleteMapping("/car/{carId}")
+    @Transactional
+    public String deletePokemon(@PathVariable int carId) {
+        System.out.println("pokemon = " + carId);
+        int deleted = this.carRepository.deleteCarByCarId(carId);
+        if (deleted > 0) return "Car was deleted okay";
+        return "Pokemon Id doesn't exist";
+    }
 }
