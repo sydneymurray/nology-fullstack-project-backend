@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
+@CrossOrigin(origins = {"http://localhost:3000"})
 public class CarController {
     @Autowired
     CarRepository carRepository;
@@ -52,16 +53,3 @@ public class CarController {
     }
 }
 
-/*
-    @Override
-    @Transactional(propagation= Propagation.REQUIRES_NEW)
-    public UserControl getUserControlById(Integer id){
-        return this.userControlRepository.getOne(id);
-    }
-
-
-    @GetMapping("/car")
-    public String getCar(){
-        return "Hello Everyone, still working";
-    }
- */
