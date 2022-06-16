@@ -17,9 +17,17 @@ public class Car {
     private String model;
     private String year;
     private String colour;
+    private String registrationState;
+    private String registrationNumber;
+    private String vin;
+    private String doors;
+    private String seats;
+    private String ownerName;
+    private String ownerCoNo;
     private String price;
     private String engineCapacity;
     private String modifications;
+    private String mileage;
     private String wikiURL;
     private String videoURL;
     private String mainImageURL;
