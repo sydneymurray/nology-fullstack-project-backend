@@ -33,6 +33,61 @@ public class Car {
     private String mainImageURL;
     private ArrayList<String> imagesURL;
 
+    public String getRegistrationNumber() {
+        return registrationNumber;
+    }
+
+    public void setRegistrationNumber(String registrationNumber) {
+        this.registrationNumber = registrationNumber;
+    }
+
+    public String getVin() {
+        return vin;
+    }
+
+    public void setVin(String vin) {
+        this.vin = vin;
+    }
+
+    public String getDoors() {
+        return doors;
+    }
+
+    public void setDoors(String doors) {
+        this.doors = doors;
+    }
+
+    public String getSeats() {
+        return seats;
+    }
+
+    public void setSeats(String seats) {
+        this.seats = seats;
+    }
+
+    public String getOwnerName() {
+        return ownerName;
+    }
+
+    public void setOwnerName(String ownerName) {
+        this.ownerName = ownerName;
+    }
+
+    public String getOwnerCoNo() {
+        return ownerCoNo;
+    }
+
+    public void setOwnerCoNo(String ownerCoNo) {
+        this.ownerCoNo = ownerCoNo;
+    }
+
+    public String getMileage() {
+        return mileage;
+    }
+
+    public void setMileage(String mileage) {
+        this.mileage = mileage;
+    }
 
     public Car() {
     }
@@ -43,6 +98,14 @@ public class Car {
 
     public void setVideoURL(String videoURL) {
         this.videoURL = videoURL;
+    }
+
+    public String getRegistrationState() {
+        return registrationState;
+    }
+
+    public void setRegistrationState(String registrationState) {
+        this.registrationState = registrationState;
     }
 
     public void setCarId(int cardId) {
