@@ -13,7 +13,9 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@CrossOrigin(origins = {"http://localhost:3000"})
+//@CrossOrigin(origins = {"http://localhost:3000"})
+@CrossOrigin(origins = {"*"})
+
 public class CarController {
     @Autowired
     CarRepository carRepository;
@@ -48,7 +50,7 @@ public class CarController {
     public String updateCar(@PathVariable int carId, @RequestBody Car carInfo){
         Optional<Car> existingCar = carRepository.findById(carId);
         if (existingCar.isEmpty()) return "Car: " + carId + " Does not exist.";
-        this.carRepository.save(carInfo);
+        Car savedCar = this.carRepository.save(carInfo);
         return "Car " + carInfo.getModel() + " saved okay";
     }
 }
